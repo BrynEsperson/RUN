@@ -15,17 +15,17 @@ public class Board extends JPanel implements ActionListener {
 
     private final int B_WIDTH = 300;
     private final int B_HEIGHT = 300;
-    private final int DOT_SIZE = 10;
-    private final int ALL_DOTS = 900;
+    private final int PLANT_SIZE = 10;
+    private final int ALL_PLANT = 900;
     private final int RAND_POS = 29;
     private final int DELAY = 140;
 
-    private final int x[] = new int[ALL_DOTS];
-    private final int y[] = new int[ALL_DOTS];
+    private final int x[] = new int[ALL_PLANT];
+    private final int y[] = new int[ALL_PLANT];
 
-    private int dots;
-    private int apple_x;
-    private int apple_y;
+    private int plant;
+    private int plant_x;
+    private int plant_y;
 
     private boolean leftDirection = false;
     private boolean rightDirection = true;
@@ -43,10 +43,10 @@ public class Board extends JPanel implements ActionListener {
     private void loadImages() {
 
         ImageIcon iid = new ImageIcon("plant.png");
-        ball = iid.getImage();
+        coin = iid.getImage();
 
         ImageIcon iia = new ImageIcon("weed.png");
-        apple = iia.getImage();
+        plant = iia.getImage();
 
         ImageIcon iih = new ImageIcon("coin.png");
         head = iih.getImage();
